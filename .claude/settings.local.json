@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "PowerShell(gh auth *)",
+      "Bash(claude plugin *)",
+      "Bash(mkdir -p ~/.claude/plugins/cache/local/harmonyos-build-deploy/1.0.0/.claude-plugin)",
+      "Bash(mkdir -p ~/.claude/plugins/cache/local/harmonyos-build-deploy/1.0.0/skills/harmonyos-build-deploy)",
+      "Bash(mkdir -p ~/.claude/local-marketplace/plugins/harmonyos-build-deploy/.claude-plugin)",
+      "Bash(mkdir -p ~/.claude/local-marketplace/plugins/harmonyos-build-deploy/skills/harmonyos-build-deploy)",
+      "WebFetch(domain:developer.huawei.com)",
+      "WebSearch",
+      "Bash(npx harmonyos-deploy *)",
+      "Bash(/c/Program Files/Huawei/DevEco Studio/sdk/default/openharmony/toolchains/hdc.exe list *)",
+      "Bash(node '/c/Program Files/Huawei/DevEco Studio/tools/hvigor/bin/hvigorw.js' assembleHap --mode module -p product=default)",
+      "Bash($HDC list *)",
+      "Bash(node \"/c/Program Files/Huawei/DevEco Studio/tools/hvigor/bin/hvigorw.js\" assembleHap --mode module -p product=default)",
+      "Bash(where hvigorw *)",
+      "Bash(hvigorw assembleHap --mode module -p product=default -p buildMode=debug)",
+      "Bash(export NODE_HOME=\"C:/Program Files/Huawei/DevEco Studio/tools/node\")",
+      "PowerShell(hvigorw assembleHap *)",
+      "Bash(del *)",
+      "Bash(\"C:\\\\Program Files\\\\Huawei\\\\DevEco Studio\\\\tools\\\\hvigor\\\\bin\\\\hvigorw.bat\" --mode module -p module=entry@default -p product=default assembleHap --no-daemon)"
+    ]
+  }
+}

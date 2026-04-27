@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "C:/Users/lucho/DevEcoStudioProjects/Sensor/Signs/pedoce.p12",
+          "storePassword": "0000001B6B831DAF8B292A058E2FD24FCCD7FF8DD5B3D436161BD1D0E37BD816D5C7A400DC446A472B6EB7",
+          "keyAlias": "sensor",
+          "keyPassword": "0000001B9440913C387DB054D11C1EF1DF84A181AE71371C587256F1B1A163C6D0667DE337C881F215379B",
+          "signAlg": "SHA256withECDSA",
+          "profile": "C:/Users/lucho/DevEcoStudioProjects/Sensor/Signs/testingProfileDebug.p7b",
+          "certpath": "C:/Users/lucho/DevEcoStudioProjects/Sensor/Signs/cere.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "5.1.0(18)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": false
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

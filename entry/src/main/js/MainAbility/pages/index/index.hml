@@ -1,0 +1,59 @@
+<list class="list">
+
+  <list-item class="header-item">
+    <div class="header">
+      <text class="title">Sensor Monitor</text>
+      <text class="hint">ACC / PRESS / ORIENT</text>
+      <text class="hint">GYRO RESERVED</text>
+    </div>
+  </list-item>
+
+  <list-item class="card-item">
+    <div class="card">
+      <text class="label">Accelerometer</text>
+      <text class="value">X: {{ax}}</text>
+      <text class="value">Y: {{ay}}</text>
+      <text class="value">Z: {{az}}</text>
+    </div>
+  </list-item>
+
+  <list-item class="card-item">
+    <div class="card">
+      <text class="label">Barometer</text>
+      <text class="value">Pressure: {{pressure}}</text>
+    </div>
+  </list-item>
+
+  <list-item class="card-item">
+    <div class="card">
+      <text class="label">Orientation</text>
+      <text class="value">Heading: {{direction}}</text>
+    </div>
+  </list-item>
+
+  <list-item class="card-item">
+    <div class="card">
+      <text class="label">Gyroscope</text>
+      <text class="value">X: {{gx}}</text>
+      <text class="value">Y: {{gy}}</text>
+      <text class="value">Z: {{gz}}</text>
+    </div>
+  </list-item>
+
+  <list-item class="card-item">
+    <div class="card">
+      <text class="label">Heart rate</text>
+      <text class="value">HR: {{hr}}</text>
+    </div>
+  </list-item>
+
+  <list-item class="card-item">
+    <div class="card">
+      <text class="label">Orientation</text>
+      <text class="value">Alpha: {{alpha}}</text>
+      <text class="value">Beta: {{beta}}</text>
+      <text class="value">Gamma: {{gamma}}</text>
+    </div>
+  </list-item>
+
+</list>
