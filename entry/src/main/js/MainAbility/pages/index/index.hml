@@ -3,6 +3,7 @@
 <!-- QR EXPORT MODE -->
   <list-item if="{{showQr}}" class="card-item2">
     <div class="card2">
+      <text class="value2">{{qrIndex}}</text>
       <text class="value2">{{qrText}}</text>
     </div>
   </list-item>

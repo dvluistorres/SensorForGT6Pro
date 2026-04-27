@@ -1,5 +1,5 @@
 import sensor from '@system.sensor'
-import device from '@system.device'
+import brightness from '@system.brightness'
 
 export default {
   data: {
@@ -23,6 +23,7 @@ export default {
     /* RECORDING */
     recording: false,
     sampleNo: 0,
+    startTime: null,
     rows: [],
     timerId: null,
 
@@ -62,8 +63,8 @@ export default {
   ===================== */
   keepScreenOn() {
     try {
-      device.setScreenKeepOn({
-        keepOn: true
+      brightness.setKeepScreenOn({
+        keepScreenOn: true
       })
     } catch (e) {}
   },
@@ -124,6 +125,7 @@ export default {
 
     this.recording = true
     this.sampleNo = 0
+    this.startTime = Date.now()
     this.rows = []
 
     this.keepScreenOn()
@@ -155,10 +157,12 @@ export default {
     this.sampleNo++
 
     var d = this.distances[this.distanceIndex]
+    var elapsed = ((Date.now() - this.startTime) / 1000).toFixed(2)
 
     var row =
       d + ',' +
       this.sampleNo + ',' +
+      elapsed + ',' +
       this.ax + ',' +
       this.ay + ',' +
       this.az + ',' +
@@ -176,7 +180,7 @@ export default {
   ===================== */
   prepareQrExport() {
     var csv =
-      'distance,sample,ax,ay,az,gx,gy,gz,pressure,direction\n'
+      'distance,sample,seconds,ax,ay,az,gx,gy,gz,pressure,direction\n'
 
     for (var i = 0; i < this.rows.length; i++) {
       csv += this.rows[i] + '\n'
