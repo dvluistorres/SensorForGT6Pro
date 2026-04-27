@@ -6,7 +6,10 @@
   },
   "development": {
     "addedSysCaps": [
-      "SystemCapability.Sensors.Sensor.Lite"
+      "SystemCapability.Sensors.Sensor.Lite",
+      "SystemCapability.Startup.SystemInfo.Lite",
+      "SystemCapability.DistributedDataManager.Preferences.Core.Lite",
+      "SystemCapability.DistributedDataManager.Preferences.Core.Lite"
     ]
   }
 }
